@@ -1,3 +1,37 @@
+metadata_test
+==========
+
+## Description
+
+Test Metadata-related functionality of Eucalyptus
+
+## Procedure
+
+1. Walk through all nodes in the tree found at the metadata service url: http://169.254.169.254/latest/meta-data/
+2. Do static queries on the nodes listed below
+3. Check that bogus values do not return any valid data (ie "foobar")
+
+    'block-device-mapping/',
+    'security-groups',
+    'ami-manifest-path',
+    'public-keys/',
+    'ramdisk-id',
+    'reservation-id',
+    'public-keys/0/',
+    'ami-launch-index',
+    'kernel-id',
+    'instance-type',
+    'local-hostname',
+    'local-ipv4',
+    'hostname',
+    'public-ipv4',
+    'instance-id',
+    'public-hostname',
+    'ami-id',
+    'placement/'
+
+
+
 # Eucalyptus Testunit Framework
 
 Eucalyptus Testunit Framework is designed to run a list of test scripts written by Eucalyptus developers.
